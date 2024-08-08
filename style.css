@@ -3,7 +3,7 @@ body {
   margin: 0px;
   background: #f7f7f7;
   display: grid;
-  gap: 60px;
+  gap: 3.75rem;
   justify-items: center;
   margin-top: 60px;
 }
@@ -31,7 +31,7 @@ h3 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.3;
 }
 
@@ -50,10 +50,15 @@ p {
 .menu a {
   display: block;
   background: #fff;
-  padding: 15px 30px;
+  padding: 1rem 2rem;
   border-radius: 4px;
   color: #000;
   text-transform: uppercase;
+  border: 2px solid #fff;
+}
+
+.menu a:hover {
+  border-color: #e21;
 }
 
 .conteudo {
@@ -64,17 +69,22 @@ p {
 
 .introducao {
   background: #fff;
-  padding: 40px;
+  padding: 2.5rem;
   text-align: right;
   position: relative;
   display: grid;
-  gap: 20px;
+  gap: 1.25rem;
   align-content: center;
   justify-items: end;
 }
 
-.detalhe {
-  width: 60px;
+.introducao h1 {
+  font-size: 2rem;
+}
+
+.introducao::before {
+  content: "";
+  width: 3.75rem;
   height: 4px;
   background: #e21;
   position: absolute;
@@ -85,30 +95,43 @@ p {
 .botao {
   background-color: #e21;
   color: #fff;
-  padding: 15px 30px;
+  padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
 }
 
+.botao:hover {
+  background: #900;
+}
+
 .subtitulo {
-  font-size: 64px;
+  font-size: 4rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
   text-align: right;
-  padding: 40px;
+  padding: 2.5rem;
   align-self: center;
+  background-image: url("./img/onda.svg");
 }
 
 .vantagens {
   background: #fff;
-  padding: 40px;
+  padding: 2.5rem;
 }
 
 .vantagens-itens {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
-  padding: 20px;
+  padding: 1.25rem;
+}
+
+.vantagens-itens:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.vantagens-itens:hover {
+  border-left: 4px solid #e21;
 }
 
 .vantagens-itens p {
@@ -119,8 +142,8 @@ p {
   background: #fff;
   width: 100%;
   text-align: center;
-  padding: 40px;
+  padding: 2.5rem;
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.3;
 }
